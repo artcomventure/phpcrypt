@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+require __DIR__ . '/Command.php';
+if (count($argv) > 4) {
+    while (empty($argv[5])) {
+        $argv[5] = readline(Command::PROMPT);
+    }
+    if ($argv[1] === Command::ENCRYPT || $argv[1] === Command::DECRYPT) {
+        exit(Command::recursive(getcwd(), $argv[1], $argv[2], $argv[3], $argv[4], $argv[5]));
+    }
+}
+exit(Command::USAGE);

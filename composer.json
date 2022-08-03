@@ -1,0 +1,19 @@
+{
+    "name": "artcomventure/phpcrypt",
+    "version": "1.0.1",
+    "description": "Recursive file encryption-decryption",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7 || ^8"
+    },
+    "require-dev": {
+        "humbug/box": "^3"
+    }
+}

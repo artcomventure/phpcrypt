@@ -1,0 +1,9 @@
+{
+  "chmod": "0777",
+  "files": [
+    "src/Command.php",
+    "LICENSE"
+  ],
+  "main": "src/command",
+  "output": "bin/phpcrypt.phar"
+}
